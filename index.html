@@ -6,6 +6,7 @@
     <style>
         #demo{
             text-align: center;
+            animation: fadeOut 2s;
         }
 
         #goaway{
@@ -14,10 +15,38 @@
             padding: 20%;
             font-size: 30px;
         }
+        #fade-in{
+            animation: fadeIn 2s;
+            text-align: center;
+        }
+
+
+
+        @keyframes fadeIn {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+        }
+
+
+
     </style>
 </head>
 <body>
     <h1 id="demo"></h1>
+    <h1 id="fade-in">Marcella Munter</h1>
     <div>
         <p id="goaway" onclick="showMAndName()"><strong>2000</strong></p>
     </div>
@@ -31,9 +60,8 @@
 <script>
     function showMAndName(){
         let name = document.getElementById("demo");
-        document.getElementById("demo").innerHTML = "M M";
+        document.getElementById("demo").innerHTML = "M        M     ";
         document.getElementById("goaway").innerHTML = " ";
-        setTimeout(function(){name.value = "Marcella Munter"}, 2000);
     }
 
 
