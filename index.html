@@ -3,35 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Site</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous" />
     <link rel="stylesheet" href="css/munter.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Orbitron');
     </style>
 </head>
 <body>
-<nav><a href="#About">About</a> <a href="#Projects">Projects</a> <a href="#Resume">Resume</a> <a href="#Game">Game</a></nav>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Resume">Resume</a></li>
+                    <li><a href="#Game">Game</a></li>
 
-<div class="binary">
-    <h1 class="anim-typewriter" id="name">Marcella Munter</h1>
-    <h2 class="anim-typewriter" id="title">Software Developer</h2>
-</div>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
 
-<div class="About">
-    <h3 id="abt_heading">About Me</h3>
-    <p id="abt_me">My education in mathematics has paved the way for my coding journey. Besides numerical operations and theory, learning problem solving skills and logical thinking have helped my approach to coding. I enjoy figuring out how to add a certain feature to a website or determining the relationship between tables in a database. Web design has also given me an artistic outlet, which I did not have previously.</p>
-</div>
+    <main>
+        <div class="binary">
+            <h1 class="anim-typewriter" id="name">Marcella Munter</h1>
+            <h2 class="anim-typewriter" id="title">Software Developer</h2>
+        </div>
 
-<div class="Projects">
-    <h1>Project Section</h1>
-</div>
+        <div class="About" id="About">
+            <h3 id="abt_heading">About Me</h3>
+            <p id="abt_me">My education in mathematics has paved the way for my coding journey. Besides numerical operations and theory, learning problem solving skills and logical thinking have helped my approach to coding. I enjoy figuring out how to add a certain feature to a website or determining the relationship between tables in a database. Web design has also given me an artistic outlet, which I did not have previously.</p>
+        </div>
 
-<div class="Resume">
-    <h1>Resume goes here.</h1>
-</div>
+        <div class="Projects" id="Projects">
+            <h1>Project Section</h1>
+        </div>
 
-<div class="Game">
-    <h1>There may be a game here later.</h1>
-</div>
+        <div class="Resume" id="Resume">
+            <h1>Resume goes here.</h1>
+        </div>
+
+        <div class="Game" id="Game">
+            <h1>There may be a game here later.</h1>
+        </div>
+    </main>
 
 
 
