@@ -13,9 +13,10 @@ main {
     margin-top: 60px;
 }
 
-.navbar-header{
+.navbar{
     position: absolute;
     width: 100%;
+    background: lightskyblue;
 }
 
 #name, #title{
