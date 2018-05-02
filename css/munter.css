@@ -13,6 +13,12 @@ main {
     margin-top: 60px;
 }
 
+.footer, .container{
+    position: absolute;
+    width: 100%;
+}
+
+
 .footer{
     position: fixed;
     height: 50px;
@@ -26,11 +32,15 @@ main {
 }
 
 .navbar{
-    position: absolute;
+    position: fixed;
     width: 100%;
     background: lightskyblue;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
 
 
 #name, #title{
@@ -49,18 +59,17 @@ main {
 #title{
     font-size: 30px;
 }
+
 .binary{
     margin-top: 0;
     margin-left: 0;
-    /*background-attachment: fixed;*/
     height: 250px;
-    width: 98.01vw;
+    width: 100%;
     padding: 10px;
-
 }
 
 .About{
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background: lightskyblue;
 
@@ -76,21 +85,28 @@ main {
    margin-left: 150px;
     padding: 20px;
     color: white;
-
-
 }
 
-/*.anim-typewriter{*/
-    /*animation: typewriter 8s steps(44) 1s 1 normal both,*/
-/*blinkTextCursor 500ms steps(44) infinite normal;*/
-/*}*/
+.projects{
+    background: dimgray;
+    width: 100%;
+    height: 600px;
+}
 
-/*@keyframes typewriter {*/
-    /*from{width: 0;}*/
-    /*to{width: 16.5em;}*/
-/*}*/
+.max, .spanish{
+    padding: 3em;
+    box-sizing: border-box;
+}
 
-/*@keyframes blinkTextCursor {*/
-    /*from{border-right-color: rgba(255,255,255,.75);}*/
-    /*to{border-right-color: transparent;}*/
-/*}*/
+img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    nav .hamburger{
+        float:right;
+        padding-right: 2em;
+        padding-top: .5em;
+        display: block;
+    }
+}
