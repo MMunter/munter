@@ -93,7 +93,7 @@ main {
     height: 600px;
 }
 
-.max, .spanish{
+.max, .spanish, .adlister{
     padding: 3em;
     box-sizing: border-box;
 }
