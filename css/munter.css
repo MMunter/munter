@@ -93,7 +93,7 @@ main {
     height: 1000px;
 }
 
-.max, .spanish, .adlister{
+.max, .spanish, .adlister, .vivetlist{
     padding: 3em;
     box-sizing: border-box;
 }
