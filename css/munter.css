@@ -90,9 +90,10 @@ main {
 
 .projects{
     width: 100%;
-    height: 130vh;
+    height: 135vh;
     background: grey;
     color: white;
+    padding-top: 50px;
 }
 
 .max, .spanish, .adlister, .vivetlist{
@@ -107,3 +108,4 @@ img{
 .project-name{
     color: white;
 }
+
